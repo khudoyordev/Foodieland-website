@@ -1,0 +1,26 @@
+.container-fluid {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.container-fluid .left {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 0;
+  width: 45px;
+  height: 500px;
+  background-color: aqua;
+  border-radius: 20px;
+}
+.container-fluid .right {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  right: -48px;
+  width: 45px;
+  height: 500px;
+  background-color: aqua;
+  border-radius: 20px;
+}/*# sourceMappingURL=style.css.map */

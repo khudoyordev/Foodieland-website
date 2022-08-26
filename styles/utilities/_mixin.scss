@@ -1,0 +1,20 @@
+@mixin checkCards {
+  width: 290px;
+  height: 490px;
+}
+
+@mixin simpleCards ($backColor) {
+  width: 400px;
+  height: 434px;
+  background: linear-gradient(180deg, $backColor);
+  border-radius: 30px;
+}
+
+
+@mixin btn($btnWidth) {
+    height: 30px;
+    width: $btnWidth;
+}
+
+
+
