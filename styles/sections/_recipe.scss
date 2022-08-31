@@ -1,5 +1,6 @@
 .simple-section {
   margin-top: 20px;
+  height: auto;
   .container {
     .simple-content {
       text-align: center;
@@ -17,15 +18,19 @@
       }
     }
     .simple-card {
-      width: 400px;
-      height: 434px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 15px 0;
       .card {
+        width: 360px;
+        height: 400px;
         background: linear-gradient(
           180deg,
           rgba(231, 249, 253, 0) 0%,
           #e7f9fd 100%
         );
-
+        padding: 5px 0;
         .box-img {
           width: 90%;
           margin: 0 auto;
@@ -36,12 +41,12 @@
             height: 250px;
           }
           .icon {
-            width: 48px;
-            height: 48px;
+            width: 38px;
+            height: 38px;
             background-color: #fff;
             position: absolute;
-            top: 25px;
-            right: 25px;
+            top: 18px;
+            right: 18px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -49,7 +54,31 @@
             .bi {
               color: #ff6363;
             }
-            .bi:hover {
+            
+          }
+        }
+
+        .card-body {
+          .card-title {
+            font-weight: 600;
+            font-size: 24px;
+            color: #000000;
+          }
+          .card-items {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px 0;
+            .card-time {
+              .bi {
+                width: 24px;
+                height: 24px;
+              }
+              .time-title {
+                font-weight: 500;
+                font-size: 14px;
+                color: rgba(0, 0, 0, 0.6);
+              }
             }
           }
         }
